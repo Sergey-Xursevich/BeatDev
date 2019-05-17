@@ -1,0 +1,66 @@
+@import 'normalize'
+
+*, *:after, *:before
+  box-sizing: border-box
+
+body
+  font-family: 'Open Sans', sans-serif
+
+header
+  position: fixed
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  top: 0
+  width: 100vw
+  height: 50px
+  padding-left: 25px 
+  background-color: #727eb2
+  color: #ffffff
+  font-size: 12px
+  text-transform: uppercase
+  z-index: 1
+
+.container
+  display: flex
+  width: 100%
+  margin-top: 50px
+
+menu
+  position: sticky
+  display: flex
+  flex: 0 0 10%
+  flex-wrap: wrap
+  margin: 0
+  background-color: #37beaf
+  order: -1
+
+aside
+  position: sticky
+  display: flex
+  flex: 0 0 40%
+  flex-wrap: wrap
+  background-color: #fa895f
+  order: 1
+
+.main__img
+  margin: 25px auto
+  width: 90%
+  height: 250px
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: center
+  &-1
+    background-image: url('../img/img-1.png')
+  &-2
+    background-image: url('../img/img-2.png')
+  &-3
+    background-image: url('../img/img-3.png')
+  &-4
+    background-image: url('../img/img-4.png')
+
+
+
+
+
+// @import 'media'
