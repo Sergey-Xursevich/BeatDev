@@ -386,16 +386,23 @@ menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 50px;
+  height: 100vh;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 10%;
           flex: 0 0 10%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0;
+  padding: 50px 0;
   background-color: #37beaf;
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
+  color: #ffffff;
 }
 
 aside {
@@ -404,15 +411,28 @@ aside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 50px;
+  height: 100vh;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 40%;
           flex: 0 0 40%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 50px 0;
   background-color: #fa895f;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+  color: #ffffff;
+}
+
+.icon__menu {
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/Gamburger Menu.svg");
 }
 
 .main__img {
@@ -438,5 +458,65 @@ aside {
 
 .main__img-4 {
   background-image: url("../img/img-4.png");
+}
+
+.menu__awesome {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  z-index: 1;
+  color: #ffffff;
+}
+
+.menu__awesome:hover {
+  cursor: pointer;
+}
+
+img {
+  height: 18px;
+  width: 18px;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  menu {
+    display: none;
+    text-align: center;
+  }
+  aside {
+    bottom: 0;
+    width: 100vw;
+    height: 25px;
+  }
+  .container__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  img {
+    display: block;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    margin: 15px;
+  }
+  img:hover {
+    cursor: pointer;
+  }
+  .menu__awesome {
+    font-size: 27px;
+  }
+  .visible {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
